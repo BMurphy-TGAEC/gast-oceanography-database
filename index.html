@@ -111,7 +111,6 @@ tr {
 				
 			</div>
 		</div>
-		<div id="cart" class="table-container"></div>
 		</td>
 		
 		<td style="width:300px">
@@ -138,7 +137,6 @@ tr {
 				<div>
 					<h3> Review Selected Documents </h3>
 					<div class="container">
-						<form action="/action_page.php">
 							<div style="border: 2px darkgrey solid; padding:5px;">
 							    <form name="requestForm" action="index.html" method="get" id="requestForm">
 								  <div class="field">
@@ -184,11 +182,13 @@ tr {
 								  </div>
 								</form>
 							<pre id="output"></pre>
-							<table>    
-								<h1 class="is-size-2"> Document Cart </h1>
+
+							<table>
+								     
+								<h1 class="is-size-2"> Shopping Cart </h1>
+								<div id="cart" class="table-container"></div>
 							</table>
 							<!-- selected document data will be appended here inside of <td> -->	
-						</form>
 					</div>
 				</div>
 			</div>
@@ -221,7 +221,7 @@ tr {
 							
 							<!-- JSON will be read in here and converted to the HTML table -->		
 
-							<div  style="height: 700px; display:inline; overflow-y:scroll;"> <!-- make scrollable -->
+							<div  style="height: 650px; float:right; display:inline-block; overflow-y:auto;"> <!-- make scrollable -->
 								        <h1 class="is-size-4" style="margin: auto; text-align: center"> Search Results </h1>
 										<div id="clicky" class="table-container" style="height:650px;"></div>
 							
@@ -240,10 +240,6 @@ tr {
 <!--<p>Data from:USGS and US Census</p>-->
 
 <script src="Map_JS.js"></script>
-
-<script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
-//]]></script>
 
 </body>
 </html>
